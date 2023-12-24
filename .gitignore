@@ -1,0 +1,9 @@
+.idea
+__pycache__
+backups
+mods
+venv
+lethal-company-mod-updater
+
+*.bak
+*.zip

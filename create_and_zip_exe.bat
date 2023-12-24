@@ -1,0 +1,1 @@
+powershell.exe -ExecutionPolicy Bypass -File "C:\PythonScripts\PycharmProjects\lethal-company-mod-updater\create_and_zip_exe.ps1"
