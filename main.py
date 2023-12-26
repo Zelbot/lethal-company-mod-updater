@@ -35,7 +35,7 @@ def verify_install_directory():
 
 def backup_current_bepinex():
     current_time = datetime.now().strftime('%d.%m.%Y_%H-%M-%S')
-    backup_destination = os.path.join(os.getcwd(), 'backups', current_time)
+    backup_destination = os.path.join(config('backups_directory'), current_time)
 
     os.makedirs('backups', exist_ok=True)
     os.makedirs(backup_destination, exist_ok=True)

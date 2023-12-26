@@ -5,6 +5,7 @@ import os
 lethal_company_install_directory = 'S:\Games\Steam\steamapps\common\Lethal Company'
 
 mods_directory = os.path.join(os.getcwd(), 'mods')
+backups_directory = os.path.join(os.getcwd(), 'backups')
 
 bepinexpack_thunderstore_url = 'https://thunderstore.io/c/lethal-company/p/BepInEx/BepInExPack/'
 
