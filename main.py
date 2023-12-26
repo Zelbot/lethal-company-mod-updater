@@ -63,8 +63,7 @@ def setup_bepinexpack(file_name):
 
     shutil.copytree(
         os.path.join(extracted_mod_folder_path, 'BepInExPack'), 
-        config('lethal_company_install_directory'),
-        dirs_exist_ok=True
+        config('lethal_company_install_directory')
     )
     os.makedirs(os.path.join(config('lethal_company_install_directory'), 'BepInEx', 'cache'))
     os.makedirs(os.path.join(config('lethal_company_install_directory'), 'BepInEx', 'patchers'))
