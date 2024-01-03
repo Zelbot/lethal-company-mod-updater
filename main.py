@@ -122,7 +122,6 @@ def delete_old_mods(download_link):
         if zip_mod_name == mod_name and zip_mod_version != mod_version:
             os.remove(os.path.join(config('mods_directory'), zip_file))
             print(f'Deleted old version {mod_version} of {mod_name}')
-    print()
 
 
 def extract_mod_zip(zip_file):
@@ -229,6 +228,7 @@ def main():
         mod_download_link = parse_latest_download_url(mod_page_source)
         download_mod(mod_download_link)
         delete_old_mods(mod_download_link)
+    print()
 
     copy_all_mods()
     clean_mod_folder()
